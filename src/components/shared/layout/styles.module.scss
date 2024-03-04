@@ -1,0 +1,14 @@
+@import "../../../styles/mixins";
+
+.main {
+   @include flex-center;
+  flex-direction: column;
+
+  .content {
+    min-height: calc(100vh - 290px);
+    padding: 2rem 0;
+    display: flex;
+    @include padding-column;
+    width: 100%;
+  }
+}

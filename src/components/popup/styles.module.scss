@@ -1,0 +1,19 @@
+@import "../../styles/color-palette";
+.popUp {
+  position: absolute;
+  background: $clr-white;
+  box-shadow: $clr-shadow;
+  overflow: auto;
+  border-radius: 6px;
+  font-size: 11px;
+  width: 340px;
+  z-index: 2;
+  max-height: 257px;
+  padding: 12px;
+  top: 55%;
+  left: -80px;
+
+  a {
+    color: $clr-blue;
+  }
+}

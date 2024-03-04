@@ -1,0 +1,43 @@
+@import "../../styles/color-palette";
+@import "../../styles/mixins";
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  @media screen and (max-width: 520px) {
+    @include flex-center
+  }
+
+  .menu {
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+
+    .placeholder {
+      background: $clr-black-100;
+      @include flex-center;
+      position: relative;
+      min-height: 220px;
+      width: 150px;
+      @media screen and (max-width: 520px) {
+        width: 100%;
+      }
+      span {
+        position: absolute;
+        color: $clr-white;
+        text-transform: uppercase;
+        font-size: 2rem;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    small {
+      margin-top: 0.4rem;
+      color: $clr-gray-10;
+    }
+  }
+}

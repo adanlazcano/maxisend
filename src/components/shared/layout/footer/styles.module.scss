@@ -1,0 +1,70 @@
+@import "../../../../styles/color-palette";
+@import "../../../../styles/mixins";
+
+.footer {
+  @include flex-center;
+  @include padding-column;
+  @include padding-row(1.5rem);
+  padding-bottom: 2rem;
+  background: $clr-black-50;
+  width: 100%;
+  color: $clr-gray-25;
+  .content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+
+    &CopyRight {
+      font-size: 11px;
+      margin-top: 6px;
+      @media screen and (max-width: 520px) {
+        margin-top: 16px;
+        text-align: center;
+      }
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 0.5rem;
+      row-gap: 0.5rem;
+      @media screen and (max-width: 520px) {
+        justify-content: center;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        column-gap: 0.5rem;
+        cursor: pointer;
+
+        a {
+          color: $clr-white-80;
+          font-size: 13px;
+        }
+
+        span {
+          color: $clr-white-80;
+          margin-top: 1px;
+        }
+        
+        .mediaImg {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+      }
+    }
+    .menu {
+      display: flex;
+      margin-top: 2.5rem;
+      row-gap: 1.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      @media screen and (max-width: 520px) {
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@import "../../../../styles/color-palette";
+@import "../../../../styles/mixins";
+
+.header {
+  @include flex-center;
+  @include padding-column;
+  @include padding-row(8px);
+  background: $clr-blue;
+  width: 100%;
+  color: $clr-white;
+  row-gap: 0.5rem;
+  h1 {
+    flex: 1;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .login {
+    @include flex-center;
+    column-gap: 2rem;
+    small {
+      cursor: pointer;
+    }
+    .btn {
+      @include custom-button;
+      background-color: $clr-gray-75;
+      color: $clr-white;
+    }
+  }
+  @media screen and (max-width: 520px) {
+    text-align: center;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../styles/mixins";
+.container {
+  width: 100%;
+
+  .utils {
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 1.5rem;
+    @media screen and (max-width: 520px) {
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .pagination {
+      display: flex;
+      align-items: center;
+      column-gap: 1.2rem;
+      row-gap: 1.2rem;
+
+      .select {
+        padding: 4px 10px;
+      }
+    }
+  }
+  .containerCards {
+    @include custom-card;
+  }
+  .input {
+    width: 120px;
+    padding: 4px 10px;
+  }
+}

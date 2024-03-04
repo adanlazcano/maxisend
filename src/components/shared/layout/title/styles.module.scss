@@ -1,0 +1,19 @@
+@import "../../../../styles/color-palette";
+@import "../../../../styles/mixins.scss";
+
+.container {
+  width: 100%;
+  @include padding-column;
+  @include padding-row(12px);
+  color: $clr-white;
+  background-color: $clr-gray-50;
+  box-shadow: 0px 5px 3px $clr-gray-25,
+    inset 0px 5px 3px $clr-gray-100;
+
+    h2{
+      font-weight: 500;
+    }
+    @media screen and (max-width: 520px) {
+      text-align: center;
+    }
+}
