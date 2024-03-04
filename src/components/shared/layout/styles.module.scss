@@ -1,7 +1,7 @@
 @import "../../../styles/mixins";
 
 .main {
-   @include flex-center;
+  @include flex-center;
   flex-direction: column;
 
   .content {
