@@ -1,9 +1,7 @@
 # Welcome to MaxiSend DEMO Streaming👋
 ![Version](https://img.shields.io/badge/version-0.0.0-blue.svg?cacheSeconds=2592000)
 
-
-
-[Visita el sitio](https://maxisend-adan-test.netlify.app){:target="_blank" rel="noopener"}
+[Visita el sitio de DEMO Streaming](https://maxisend-adan-test.netlify.app)
 
 ## Install
 
@@ -16,6 +14,7 @@ npm install
 ```sh
 npm start
 ```
+
 ## Language
 
 React Typescript
