@@ -27,10 +27,10 @@
 
 @mixin custom-card {
   display: grid;
-  grid-template-columns: repeat(auto-fill, 160px);
+  grid-template-columns: repeat(auto-fill, 180px);
   flex-wrap: wrap;
-  column-gap: 0.2rem;
-  row-gap: 1.5rem;
+  grid-row-gap: 2rem;
+  grid-column-gap: 0.5rem;
   justify-content: space-between;
   @media screen and (max-width: 520px) {
     justify-content: center;
