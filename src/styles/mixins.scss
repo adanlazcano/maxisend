@@ -27,13 +27,12 @@
 
 @mixin custom-card {
   display: grid;
-    grid-template-columns: repeat(auto-fill, 180px);
-    justify-content: space-between;
-    grid-row-gap: 2rem;
-    grid-column-gap: 0.3rem;
-    overflow: hidden;
-    @media (max-width: 520px) {
-      justify-content: center;
-      grid-template-columns: 100%;
-    }
+  grid-template-columns: repeat(auto-fill, 160px);
+  flex-wrap: wrap;
+  column-gap: 0.2rem;
+  row-gap: 1.5rem;
+  justify-content: space-between;
+  @media screen and (max-width: 520px) {
+    justify-content: center;
+  }
 }
