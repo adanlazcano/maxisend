@@ -8,7 +8,7 @@ export interface Entries {
 export interface Entry {
   title:       string;
   description: string;
-  programType: ProgramType;
+  programType?: ProgramType;
   images:      Images;
   releaseYear: number;
 }

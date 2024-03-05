@@ -14,6 +14,11 @@ npm install
 ```sh
 npm start
 ```
+## Tests
+
+```sh
+npm test
+```
 
 ## Language
 

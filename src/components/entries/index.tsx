@@ -52,10 +52,10 @@ const EntriesComponent = memo(() => {
               />
             </form>
           </div>
-          <div className={styles.containerCards}>
+          <div data-testid={'entries-list'} className={styles.containerCards}>
             {currentRecords?.length > 0 ? (
-              currentRecords.map((entry: Entry, index: number) => (
-                <Card key={index} entry={entry} />
+              currentRecords.map((entry: Entry,index:number) => (
+                <Card key={index}  entry={entry} />
               ))
             ) : (
               <small>0 resultados</small>
